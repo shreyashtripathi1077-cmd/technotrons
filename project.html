@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Robotics Club NIT Patna</title>
+  <!-- <link rel="stylesheet" href="../CSS/project-responsive.css"> -->
+  <link rel="stylesheet" href="../CSS/project.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+  }
+
+  // Close menu when clicking outside
+  window.addEventListener("click", function(e) {
+    const menu = document.getElementById("menuDropdown");
+    const hamburger = document.querySelector(".hamburger");
+    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+</script>
+
+<body>
+  <header>
+   
+  <div class="top-menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu-dropdown" id="menuDropdown">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="#contact-us">Contact Us</a>
+    </div>
+  </div>
+
+     
+    <nav id="navbar">
+      <div class="logo">
+        <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+        <h1>Robotics Club NIT Patna</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        
+      </ul>
+    
+    </nav>
+  </header>
+
+  <h1 id="heading">Our Projects</h1>
+  <main class="projects-page">
+
+
+    <div class="project">
+      <img src="project images/Self balancing bot.webp" class="project-img"
+        alt="Self balancing robot project by Robotics Club NIT Patna">
+      <div class="detail">
+        <h2>Self Balancing Bot</h2>
+        <p>
+          A self-balancing robot works on the principle of an inverted pendulum,
+          where the system is naturally unstable and tends to fall if not actively controlled.
+          Unlike a normal pendulum, this robot cannot balance itself without continuous correction.
+        </p>
+        <p>
+          The robot continuously measures its tilt angle, direction of fall, and rate of movement
+          using an MPU6050 sensor (gyroscope + accelerometer).
+        </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/Mark 1.6.png" class="project-img"
+        alt="Mark 1.6 robotic arm project by Robotics Club NIT Patna">
+      <div class="detail">
+      <h2>Mark 1.6</h2>
+      <p>
+        Mark 1.6 is a wireless robotic arm system mounted on a four-wheel drive (4WD) mobile chassis.
+        The robot is controlled remotely using Bluetooth, allowing smooth and flexible operation.
+      </p>
+      <p>
+        The robotic arm is 3D-printed, making the design lightweight, customizable, and cost-effective.
+        NRF modules are used for wireless communication, enabling reliable data transmission.
+      </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/line follower bot.png" class="project-img"
+        alt="Line follower robot project by Robotics Club NIT Patna">
+        <div class="detail">
+      <h2>Line Follower Bot</h2>
+      <p>
+        A line follower robot is designed to automatically track a predefined path marked on the floor.
+        The robot uses infrared (IR) sensors to detect the line and adjust wheel movement accordingly.
+      </p>
+      <p>
+        Through real-time sensing and control, the robot follows the track smoothly and accurately,
+        making it suitable for automation tasks and robotics competitions.
+      </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/pluto x.png" class="project-img"
+        alt="Pluto X nano drone project by Robotics Club NIT Patna">
+      <div class="detail">
+      <h2>Pluto X</h2>
+      <p>
+        Pluto X is a compact open-source nano drone developed by an Indian startup at IIT Bombay.
+        It features a Wi-Fi enabled camera capable of supporting ROS-based image processing.
+      </p>
+      <p>
+        The drone supports both manual and autonomous operation, making it suitable for research,
+        experimentation, and computer vision applications.
+      </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/3D Printing.png" class="project-img"
+        alt="3D printing project by Robotics Club NIT Patna">
+      <div class="detail">
+      <h2>3D Printing</h2>
+      <p>
+        3D printing is an additive manufacturing technique used to create physical objects
+        layer by layer from digital designs.
+      </p>
+      <p>
+        This method reduces material waste and allows complex shapes to be produced easily,
+        making it widely used in robotics, prototyping, and research.
+      </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/Automated bot.png" class="project-img"
+        alt="Automated robot project by Robotics Club NIT Patna">
+      <div class="detail">
+      <h2>Automated Bot</h2>
+      <p>
+        This automated robot navigates along a wall while maintaining a fixed distance using
+        laser distance sensors and closed-loop feedback control.
+      </p>
+      <p>
+        The system tracks laps and detected objects using IR sensors and displays data on a 16×2 LCD.
+      </p>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="project images/Radar Navigation.png" class="project-img" alt="Radar navigation robotics project">
+    <div class="detail">
+      <h2>Radar Navigation</h2>
+      <p>
+        Radar navigation systems detect and track objects to ensure safe movement,
+        especially in poor visibility conditions like fog or rain.
+      </p>
+      <p>
+        X-band and S-band radars provide different resolution and range capabilities
+        for reliable navigation.
+      </p>
+      </div>
+      </div>
+
+      <div class="project">
+        <img src="project images/hexapod.png" class="project-img"
+          alt="Hexapod robot project by Robotics Club NIT Patna">
+        <div class="detail">
+        <h2>Hexapod</h2>
+        <p>
+          A hexapod robot offers precise movement across six degrees of freedom,
+          enabling stable motion on uneven surfaces.
+        </p>
+        <p>
+          Built using an Arduino Nano, SG90 servos, and PCA9685 driver,
+          the robot is lightweight, customizable, and suitable for experimentation.
+        </p>
+        </div>
+      </div>
+
+
+      <div class="project" >
+        <img src="project images/Drone.png" class="project-img"
+          alt="Air quality monitoring drone project by Robotics Club NIT Patna">
+        <div class="detail">
+        <h2>Drone</h2>
+        <p class="para">
+          This drone monitors air quality by measuring atmospheric gas concentrations
+          and transmitting data to Google Firebase in real time.
+        </p>
+        <p>
+          It uses an MQ-2 gas sensor, ESP8266 NodeMCU, and a KK 2.1.5 flight controller
+          for stable and controlled flight.
+        </p>
+        </div>
+      </div>
+
+  </main>
+ 
+   <footer class="foot">
+      <div class="footlogo">
+        <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+        <h1>Robotics Club NIT Patna</h1>
+        <p> Ashok Rajpath, National Institute of Technology Patna
+          Incubation Center 3rd Floor - 800005</p>
+      </div>
+      <div id="contact-us">
+        <li> <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank"><img src="insta_logo.png"
+              alt="Instagram"></a></li>
+        <li><a href="https://www.facebook.com/robonitp/" target="_blank"><img src="facebook_logo.png"
+              alt="Facebook"></a></li>
+        <li><a href="https://www.youtube.com/@roboticsclubnitp8637" target="_blank"><img src="youtube_logo.png"
+              alt="Youtube"></a></li>
+      </div>
+    </footer>
+</body>
+
+</html>

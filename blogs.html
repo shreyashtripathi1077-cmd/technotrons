@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Robotics Club NIT Patna</title>
+    <link rel="stylesheet" href="../CSS/blogs.css">
+</head>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+  }
+
+  // Close menu when clicking outside
+  window.addEventListener("click", function(e) {
+    const menu = document.getElementById("menuDropdown");
+    const hamburger = document.querySelector(".hamburger");
+    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+</script>
+
+<body>
+    <header>
+        <div class="top-menu">
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu-dropdown" id="menuDropdown">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="#contact-us">Contact Us</a>
+  </div>
+</div>
+       
+        <nav id="navbar">
+            <div class="logo">
+                <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+                <h1>Robotics Club NIT Patna</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="blogs-page">
+
+        <h1>Blogs</h1>
+
+
+        <article class="blog">
+            <h2>The Ridiculous Engineering of the World’s Most Important Machine</h2>
+
+            <img src="Blog Images/EUV Lithography Machine.jpg" class="blog-img"
+                alt="EUV lithography machine used in advanced chip manufacturing" style="width: 350px;">
+
+            <h3>EUV Lithography Machine</h3>
+
+            <p>
+                EUV lithography is a gigantic chip-making machine that uses extreme ultraviolet light
+                of 13.5 nm wavelength to print the tiniest features on modern microchips, allowing
+                billions of transistors to be packed onto a single silicon wafer.
+            </p>
+
+            <p>
+                To generate this rare light, a high-power CO₂ laser fires at microscopic molten tin
+                droplets, turning them into plasma that emits EUV radiation. Ultra-smooth multilayer
+                mirrors collect and project this light onto silicon wafers with nanometer precision.
+            </p>
+
+            <p class="author"><em>By Dhrubajyoti Roy (CSE)</em></p>
+        </article>
+
+
+        <article class="blog">
+            <h2>The Insane Rise of NVIDIA (Case Study)</h2>
+
+            <img src="Blog Images/Nvidia case study.jpg" class="blog-img" alt="NVIDIA growth case study illustration"
+                style="width: 350px;">
+
+            <p>
+                This case study explores how NVIDIA transformed from a struggling gaming chip startup
+                into a multi-trillion-dollar company at the center of the global AI revolution.
+            </p>
+
+            <p>
+                Early failures like the NV1 chip nearly destroyed the company, but breakthroughs such
+                as the GeForce 256 and long-term investment in CUDA later positioned NVIDIA as the
+                backbone of modern AI and deep learning.
+            </p>
+
+            <p class="author"><em>By Samir Victor Murmu (ECE)</em></p>
+        </article>
+
+
+        <article class="blog">
+            <h2>Exploring GPU Architecture</h2>
+
+            <img src="Blog Images/gpu.jpg" class="blog-img" alt="GPU architecture diagram and components"
+                style="width: 350px;">
+
+            <p>
+                Modern GPUs are massively parallel computing machines built with thousands of simple
+                cores designed to process enormous amounts of data simultaneously.
+            </p>
+
+            <p>
+                This blog explains GPU organization, CUDA cores, SIMD/SIMT parallelism, and how GPUs
+                are optimized for graphics rendering, AI workloads, and scientific computation.
+            </p>
+
+            <p class="author"><em>By Kumar Abhijit Ranjan (EE)</em></p>
+        </article>
+
+
+        <article class="blog">
+            <h2>Why It Was Almost Impossible to Build the Blue LED</h2>
+
+            <img src="Blog Images/blue led.webp" class="blog-img" alt="Blue LED technology breakthrough"
+                style="width: 350px;">
+
+            <p>
+                Blue LEDs were once considered impossible due to material limitations and crystal
+                growth challenges. Engineer Shuji Nakamura overcame these barriers using gallium
+                nitride and innovative fabrication techniques.
+            </p>
+
+            <p>
+                The invention of efficient blue LEDs enabled white LED lighting, revolutionizing
+                global energy consumption and earning a Nobel Prize in Physics.
+            </p>
+
+            <p class="author"><em>By Adarsh Pandey (ME)</em></p>
+        </article>
+
+    </main>
+    <footer class="foot">
+        <div class="footlogo">
+            <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+            <h1>Robotics Club NIT Patna</h1>
+            <p> Ashok Rajpath, National Institute of Technology Patna
+                Incubation Center 3rd Floor - 800005</p>
+        </div>
+        <div id="contact-us">
+            <li> <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank"><img src="insta_logo.png"
+                        alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/robonitp/" target="_blank"><img src="facebook_logo.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/@roboticsclubnitp8637" target="_blank"><img src="youtube_logo.png"
+                        alt="Youtube"></a></li>
+        </div>
+    </footer>
+
+</body>
+
+</html>

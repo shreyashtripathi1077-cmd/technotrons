@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../CSS/events.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+</head>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+  }
+
+  // Close menu when clicking outside
+  window.addEventListener("click", function(e) {
+    const menu = document.getElementById("menuDropdown");
+    const hamburger = document.querySelector(".hamburger");
+    if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
+</script>
+
+<body>
+    <header>
+        <div class="top-menu">
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu-dropdown" id="menuDropdown">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="#contact-us">Contact Us</a>
+  </div>
+</div>
+        
+        <nav id="navbar">
+            <div class="logo">
+                <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+                <h1>Robotics Club NIT Patna</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                
+            </ul>
+            
+        </nav>
+    </header>
+    <h1 class="cap">Stay Tuned For</h1>
+    <h2>Events on the Horizon</h2>
+
+    <div class="container">
+        <div class="event">
+            <h3>Fresher's Orientation</h3>
+            <img class="event-img" src="Event Images/Fresher's Orientation 2.png" alt="Fresher's Orientation">
+            <p>
+                An interactive orientation by the Robotics Club, NIT Patna designed exclusively for freshers—packed with
+                fun
+                activities, learning, rewards, and a chance to shine on our social platforms.
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Arduino Jam</h3>
+            <img class="event-img" src="Event Images/Ardiuno Jam.webp" alt="Arduino Jam">
+            <p>
+                Arduino Jam is an interactive workshop covering Arduino fundamentals, IDE setup, circuit simulation, and
+                sensor basics, designed to help students kickstart hands-on electronics.
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Digital Detective</h3>
+            <img class="event-img" src="Event Images/Digital Detective 2.png" alt="Digital Detective">
+            <p>
+                Digital Detective is a 24-hour technical treasure hunt featuring passcode-encrypted riddles that test
+                logic,
+                speed, and problem-solving skills. Participants race against time to crack every clue and emerge as the
+                ultimate winner.
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Codejuring</h3>
+            <img class="event-img" src="Event Images/Codejuring.png" alt="Codejuring">
+            <p>
+                Codejuring is a competitive online event featuring an aptitude test followed by a coding challenge,
+                designed
+                to assess logical thinking and problem-solving skills.
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Robowar</h3>
+            <img class="event-img" src="Event Images/Robowar.png" alt="Robowar">
+            <p>
+                “Don’t be satisfied with stories of others—create your own legend.”
+                <br><br>
+                Robowar is the ultimate test of engineering skill and strategy, where combat robots clash in an intense
+                arena
+                battle. Witness power, precision, and innovation collide as teams fight for dominance.
+                <br><br>
+                <strong>Prize Pool:</strong> ₹15,000 for the winner 🏆
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Abhiyutthan</h3>
+            <img class="event-img" src="Event Images/Abhiyutthan 2.png" alt="Abhiyutthan">
+            <p>
+                A mega event consisting of multiple sub-events aimed at stimulating interest in robotics and technology.
+                Designed to give students a fun yet technical break from academic routines.
+                <br><br>
+                <strong>Rewards:</strong><br>
+                • Swag Kits containing Tech Stickers and Key-chains<br>
+                • Egghead Io’s free 1-year codes<br>
+                • Code for Cause discount coupons
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>Hack O Heist</h3>
+            <img class="event-img" src="Event Images/Hack O Heist 2.png" alt="Hack O Heist">
+            <p>
+                Hack O Heist is a 36-hour online hackathon inspired by the Money Heist theme, where participants build
+                innovative solutions to real-world social and ecological problems.
+            </p>
+        </div>
+
+
+        <div class="event">
+            <h3>The Next Hokage</h3>
+            <img class="event-img" src="Event Images/The Next Hokage.png" alt="The Next Hokage">
+            <p>
+                The Next Hokage is a high-speed Robo Race event organized by the Robotics Club, NIT Patna, where teams
+                compete
+                with their robots in an adrenaline-filled race of speed, control, and precision.
+            </p>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="footlogo">
+            <img src="nitp_robotics_logo.png" alt="NITP ROBOTICS LOGO">
+            <h1>Robotics Club NIT Patna</h1>
+            <p> Ashok Rajpath, National Institute of Technology Patna
+                Incubation Center 3rd Floor - 800005</p>
+        </div>
+        <div id="contact-us">
+            <li> <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank"><img src="insta_logo.png"
+                        alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/robonitp/" target="_blank"><img src="facebook_logo.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/@roboticsclubnitp8637" target="_blank"><img src="youtube_logo.png"
+                        alt="Youtube"></a></li>
+        </div>
+    </footer>
+</body>
+
+</html>
